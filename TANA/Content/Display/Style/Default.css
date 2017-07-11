@@ -1,0 +1,218 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body { 
+    font: 13px arial;
+    margin: 0;
+    padding: 0;
+	  background:url(../iCon/texture1.png)
+	 
+	}
+ul,li{ padding:0px; margin:0px; outline:0px; vertical-align:baseline; border:0px}
+
+ul,li{ list-style:none}
+a{text-decoration:none}
+a:hover{color:#fa8e00 !important;text-decoration:none !important} 
+img { border:none}
+.Clear{ clear:both}
+@font-face { 
+font-family:UTM_Sarah; 
+src:url(../Fonts/UTM_Sarah.ttf)
+}
+@font-face { 
+font-family:Condensed; 
+src:url(../Fonts/UTM-Swiss-Condensed.ttf)
+}
+@font-face { 
+font-family:CondensedBold; 
+src:url(../Fonts/UTM-Swiss-CondensedBold.ttf)
+}
+@font-face { 
+font-family:Roboto; 
+src:url(../Fonts/Roboto-Bold.ttf)
+}
+header{ width:100%; height:auto; float:left; margin:0px; background:#FFF}
+#Banner{width:100%; height:auto; float:left; margin:0px; padding:20px 0px}
+#Content_Banner{width:1200px; height:auto; margin:0px auto}
+#Left_Banner{width:20%; height:auto; float:left; margin:0px}
+#Left_Banner img {width:207px; height:auto; float:left; margin:5px 0px}
+#Center_Banner{width:50%; height:auto; float:left; margin:0px}
+#Center_Banner .pan1{font-size:22px; color:#ed1c24; display:block; text-transform:uppercase; font-weight:bold; margin:5px; text-align:center; font-family:Tahoma, Geneva, sans-serif}
+#Center_Banner .pan2{font-size:20px; color:#0072bc; display:block; text-transform:uppercase; font-weight:bold; margin:5px; text-align:center; font-family:Roboto }
+#Right_Banner{width:30%; height:auto; float:left; margin:0px}
+#Top_Banner{width:100%; height:auto; text-align:left; float:left; margin:0px}
+.Box_Hotline{width:50%; height:auto; float:left; font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif}
+.Box_Hotline a{ font-size:14px; color:#3e3e3e; display:inline-block; margin:5px }
+.Box_Hotline a span{font-weight:bold; color:#ed1c24}
+.Box_Hotline i{width: 35px;
+    height: 35px;
+    text-align: center;
+	background:url(../iCon/icon_Hotline.png) no-repeat center center scroll #0072bc; background-size:100%;
+    border-radius: 50%;
+    margin-right: 10px; display:inherit; float:left}
+ 
+ .Box_Order{width:50%; height:auto; float:right; font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif}
+ .Box_Order a{ font-size:14px; color:#3e3e3e; display:inline-block; margin:5px }
+ .Box_Order span{font-weight:bold; color:#ed1c24}
+ .Box_Order i{width: 35px;
+    height: 35px;
+    text-align: center;
+	background:url(../iCon/icon_Buy.png) no-repeat center center scroll #0072bc; background-size:100%;
+    border-radius: 50%;
+    margin-right: 10px; display:inherit; float:left}
+#Bottom_Banner{width:100%; height:auto; float:left; margin:4px 0px}
+.Search{    border: 2px solid #0072bc;
+    padding-top: 1px;
+    padding-bottom: 1px; width:100%; height:38px; float:right}
+.Search #slSearch{ width:30%; height:38px; border:none;     border-right: 1px solid #ccc; float:left; text-align:center; text-indent:15px}
+.Search .txtSearch{ width:60%; height:38px; border:none; float:left; margin:0px; text-indent:15px}
+.Search .btnSearch{width:8%; height:38px; border:none;   background:url(../iCon/icon_Search.png) no-repeat center center scroll transparent; float:left}
+#Menu{width:100%; height:40px; padding:0px; float:left; margin:0px; background:#2c3e50}
+#Main_Menu{width:1200px; height:auto; margin:0px auto}
+#Left_Menu{width:220px; height:40px; float:left; margin:0px; background:#0072bc }
+#Left_Menu:hover{ background:#ed1c24}
+#Left_Menu span{line-height:40px; text-align:center;    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; display:block; color:#FFF; position:relative}
+#Left_Menu span:before{ width:15px; height:15px; position:absolute; content:''; background:url(../iCon/icon_List.png); left:7px; top:12px}
+
+#Content_Menu{     width:100%; height:auto; float:left; margin:0px;    border: 1px solid #ccc; display:none}
+#Content_Menu .ul1{ width:100%; height:auto; float:left; padding:10px 0px; position:relative; z-index:1000000;background-color: rgba(255,255,255,0.9);}
+#Content_Menu .ul1 .li1{ border-bottom: 1px solid #ddd; width:100%; float:left}
+#Content_Menu .ul1 .li1:last-child{border:none}
+#Content_Menu .ul1 .li1 a{ padding:7px 7px; color:#333; font-size:13px; display:block}
+#Content_Menu .ul1 .li1 .ul2{width:100%; height:auto; position:absolute; float:left; margin-left:100%; border: 1px solid #ccc; margin-top:-30px; display:none;background-color: rgba(255,255,255,0.9);}
+#Content_Menu .ul1 .li1 .ul2 .li2{ border-bottom: 1px solid #ddd; width:100%; float:left}
+#Content_Menu .ul1 .li1 .ul2 .li2:last-child{border:none}
+#Left_Menu:hover #Content_Menu{display:block}
+#Content_Menu .ul1 .li1:hover .ul2{display:block}
+#Right_Menu{width:980px; height:100%; float:left; margin:0px}
+#Right_Menu ul{width:100%; height:auto; float:left}
+#Right_Menu ul li{float:left}
+#Right_Menu ul li a{line-height:40px;  font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase; color:#FFF; display:block; margin:0px 20px}
+section{width:100%; height:auto; float:left; margin:0px}
+#Main{width:1200px; height:auto; margin:0px auto}
+#Slide{width:100%; height:390px; float:left; margin:0px}
+#Slide img{width:100%; height:100%; float:left; margin:0px}
+#Main_Content{width:100%; height:auto; float:left; margin:0px; padding:10px 0px}
+#Main_Content #MenuContent{ width:230px; height:auto; float:left; margin:0px}
+#Content_MenuProduct{width:100%; height:auto; float:left; margin:0px; border:1px solid #f4f5f6}
+#Main_Content #MenuContent .ul_1{ width:100%; margin:0px 0px; float:left; padding:10px 0px}
+#Main_Content #MenuContent .ul_1 .li_1{ width:90%; height:100%; margin:0px auto; border-bottom:1px dashed #d9d9d9; position:relative  }
+#Main_Content #MenuContent .ul_1 .li_1 a{ margin:7px 0px; color:#0072bc; font-size:14px; display:block}
+#Main_Content #MenuContent .ul_1 .li_1 a i{background:url(../iCon/icon_List1.gif); width:7px; height:7px; float:left; margin:5px 7px 3px 0px}
+#Main_Content #MenuContent .ul_1 .li_1:hover{background:none}
+#Main_Content #MenuContent .ul_1 .li_1 .ul_2{ width:100%; height:100%; float:left; margin:0px}
+#Main_Content #MenuContent .ul_1 .li_1:hover .ul_2{display:block; z-index:1}
+#Main_Content #MenuContent .ul_1 .li_1 .ul_2 .li_2 a{ margin-left:20px; font-size:13px; display:block; font-weight:normal; color:#3e3e3e}
+#Main_Content #MenuContent #Menu_Product{width:100%; height:auto; float:left; margin:0px;}
+.Menu_mn{width:100%; height:auto; float:left; margin:0px; background:#0072bc}
+.Menu_mn span{padding:7px; display:block; text-align:center; margin:5px; font-size:13px; font-weight:bold; color:#FFF; text-transform:uppercase}
+#Hanggia{width:100%; height:auto; float:left; margin:5px 0px; padding:10px 0px}
+#Content_Hanggia{width:100%; height:auto; float:left; margin:0px;border:1px solid #f4f5f6}
+#Content_Hanggia img{width:100%; height:auto; float:left; margin:0px; padding:5px 0px}
+#NewsHomes{width:100%; height:auto; float:left; margin:0px; padding:10px 0px}
+#Content_NewsHomes{width:100%; height:auto; float:left; margin:0px;border:1px solid #f4f5f6; }
+#Content_NewsHomes .Tear_newshomes{width:100%; height:auto; float:left; margin:0px; padding:7px 0px;  border-bottom: 1px dashed #d9d9d9}
+#Content_NewsHomes .Tear_newshomes h4{ font-size:13px; margin:5px;}
+#Content_NewsHomes .Tear_newshomes h4 a{ color:#0072bc;}
+#Content_NewsHomes .Tear_newshomes img{width:70px; height:auto; float:left; padding:5px}
+#Content_NewsHomes .Tear_newshomes span{margin:7px 5px 5px 5px; display:block; font-size:12px; color:#3e3e3e}
+#Uudiem{width:100%; height:auto; float:left; margin:0px; padding:0px 0px; margin-top:10px}
+#Uudiem .ud{width:289px; height:auto; float:left; margin:5px 6px; border:1px solid #e5e1e1; position:relative}
+#Uudiem .ud:first-child{margin-left:0px}
+#Uudiem .ud:last-child{margin-right:0px; float:right}
+#Uudiem .ud .ud1{color:#666; font-size:15px; font-weight:bold; padding:10px 0px 5px 55px; display:block; text-transform:uppercase}
+ #Uudiem .ud .ud2{ font-size:12px; color:#333; padding:0px 5px 10px 55px; display:block}
+ #Uudiem .tv:before{ width:38px; height:40px; content:''; background:url(../iCon/s3.png); position:absolute; left:5px; top:7px}
+ #Uudiem .dt:before{ width:40px; height:40px; content:''; background:url(../iCon/s2.png); position:absolute; left:5px; top:7px}
+  #Uudiem .ch:before{ width:37px; height:40px; content:''; background:url(../iCon/s4.png); position:absolute; left:5px; top:7px}
+ #Uudiem .gh:before{ width:37px; height:37px; content:''; background:url(../iCon/s1.png); position:absolute; left:5px; top:7px}
+#Content{width:960px; height:auto; float:left; margin:0px 10px 0px 0px}
+.cls_Product{width:100%; height:auto; float:left; margin:0px 0px 10px 0px}
+.cls_Product .nvar_ct{width:100%; height:auto; float:left; margin:0px; background:#0072bc}
+.cls_Product .nvar_ct h2{ background:#ed1c24; margin:0px; display:inline-block; padding:0px 7px}
+.cls_Product .nvar_ct h2 a{color:#FFF; font-size:13px; color:#FFF; padding:12px 8px; text-transform:uppercase; display:block}
+.Content_clsProduct{width:100%; height:auto; float:left; margin:0px; padding:5px 0px}
+.Tear_1{width:18.7%; height:auto; float:left; margin:5px; border:1px solid #e8e8e8; padding-bottom:3px; position:relative}
+.Tear_1 .img{width:100%; height:200px; float:left; margin:0px; display:table; table-layout:fixed; margin-bottom:7px}
+.Tear_1 .img a{display:table-cell; vertical-align:middle; text-align:center}
+.Tear_1 .img a img{max-width:100%; max-height:180px}
+.Tear_1 .Name{text-align:center; font-weight:bold; display:block; font-size:13px; margin:5px; color:#2c3e50}
+.Tear_1 .Price{font-size:12px; color:#5f5f5f; text-decoration:line-through; margin:9px 5px; display:block; float:left}
+.Tear_1 .PriceSale{font-size:16px; color:#ed1c24;  margin:5px; display:block; float:right; font-weight:bold}
+.Tear_1 .OrderNow{  position:absolute; top:30%; margin:0px; text-align:center; width:100%; display:none}
+.Tear_1 .OrderNow a{color:#FFF;background:#0072bc; font-size:12px; text-transform:uppercase; text-align:center; display:inline-block; padding:4px 8px}
+.Tear_1:hover .OrderNow {display:block}
+#Quangcao{width:100%; height:auto; float:left; margin:0px; padding:10px 0px}
+#Quangcao a img{max-width:100%; height:auto; float:left; margin:2px 0px}
+
+footer{width:100%; height:auto; float:left; margin:0px; padding:15px 0px 0px 0px }
+#Partner{width:100%;    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px; float:left; height:auto}
+#Partner #Content_partner{width:1200px; height:auto; margin:0px auto}
+#Partner #Content_partner img{height:27px; width:auto; float:left; margin:5px; margin:7px 16px}
+#Footer{width:100%; height:auto; float:left; margin:0px; background:#f6f6f6}
+#Info_Footer{width:1200px; height:auto;   margin:0px auto; padding:30px 0px}
+#Info_Footer #Logo{width:300px; height:auto; float:left; margin:0px}
+#Info_Footer #Logo img{width:auto; float:left; margin:0px}
+#Info_Footer #ListAgency{width:900px; height:auto; float:left; margin:0px}
+#Info_Footer #ListAgency .Agency_Tear{width:31%; height:auto; float:left; margin:0px 10px 10px 10px}
+#Info_Footer #ListAgency .Agency_Tear .ts{font-size:14px; font-weight:bold; color:#333; position:relative; display:block; padding-left:16px}
+#Info_Footer #ListAgency .Agency_Tear .ts:before{position:absolute; content:''; width:10px; height:17px; background:url(../iCon/icon-location.png); left:0px; top:0px;}
+#Info_Footer #ListAgency .Agency_Tear .dc{font-size:12px; color:#3e3e3e; margin:5px 0px; padding: 10px 0px 0px 0px; display:block}
+#Info_Footer #ListAgency .Agency_Tear .dt{font-size:13px; color:#3e3e3e; margin:2px 0px; padding: 0px 0px 5px 0px; display:block}
+#Info_Footer #ListAgency .Agency_Tear .dt span{font-weight:bold; color:#F00}
+#Register{width:100%; height:auto; float:left; padding:20px 0px; background:#ecf0f1}
+#Content_Register{width:1200px; height:auto; margin:5px auto}
+#Content_Register #Left_Content_Register{width:auto; height:auto; float:left; margin:0px}
+#Content_Register #Left_Content_Register span{ color:#3e3e3e; font-size:13px; text-transform:uppercase; padding:15px 5px; display:block; font-weight:bold}
+#Center_Content_Register{width:auto; height:auto; float:left; margin:0px}
+#Center_Content_Register #Box_Register{width:400px; float:left; height:40px; margin:0px 15px;   background:#FFF}
+#Center_Content_Register #Box_Register .txtRes{width:90%; height:38px; border:none; background-color:transparent; float:left; margin:0px; text-indent:15px}
+#Center_Content_Register #Box_Register .btnRes{width:10%; height:40px; border:none; background:url(../iCon/Register-Icon.png) no-repeat center center scroll #e6e6e6; float:left; margin:0px}
+#Right_Content_Register{width:auto; height:auto; margin:0px; float:right; text-align:right}
+#Right_Content_Register a{ position:relative; margin:5px 7px; display:inline-block}
+ 
+#Right_Content_Register a.Face{ width:30px; height:30px; background:url(../iCon/icon_Social.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:10px 7px}
+#Right_Content_Register a.Google{ width:30px; height:30px; background:url(../iCon/icon_Social.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:-16px 7px}
+#Right_Content_Register a.Maps{ width:30px; height:30px; background:url(../iCon/icon_Social.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:-42px 7px}
+#Right_Content_Register a.Face:hover{ width:30px; height:30px; background:url(../iCon/icon_Social_hover.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:10px 7px}
+#Right_Content_Register a.Google:hover{ width:30px; height:30px; background:url(../iCon/icon_Social_hover.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:-16px 7px}
+#Right_Content_Register a.Maps:hover{ width:30px; height:30px; background:url(../iCon/icon_Social_hover.png) no-repeat center center scroll transparent;   border:1px solid #c2c2c2; border-radius:50%; background-position:-42px 7px}
+#Intro{width:100%; height:auto; float:left; padding:20px 0px;}
+#Intro #IntroContent{width:1200px; height:auto; margin:0px auto}
+#Intro #IntroContent .Tear_Intro{width:23%; height:auto; float:left; margin:5px}
+#Intro #IntroContent .Tear_Intro span{ color:#3e3e3e; font-size:13px; font-weight:bold; text-transform:uppercase; display:block; margin:5px 0px; padding-bottom:10px}
+#Intro #IntroContent .Tear_Intro a{font-size:13px; color:#3e3e3e; margin:7px 0px; display:block}
+#CoppyRight{width:100%; height:auto; margin-top:15px; float:left; background:#2c3e50; text-align:center}
+#CoppyRight span{ text-align:center; padding:7px 0px; color:#999; display:inline-block}
+#CoppyRight span span{color:#FFF; font-weight:bold}
+#Bocongthuong{width:100%; height:auto; float:left; margin:0px ; padding:10px 0px; text-align:center}
+#Bocongthuong img{ margin:5px auto; display:block; width:200px; height:auto}
+#MenuMobile{width:100%; height:40px; padding:5px 0px; background:#2c3e50; text-align:center; float:left; display:none}
+#MenuMobile a{    line-height: 40px;
+ 
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    color: #FFF;
+    position: relative}
+#MenuMobile a:before{    width: 15px;
+    height: 15px;
+    position: absolute;
+    content: '';
+    background: url(../iCon/icon_List.png);
+    left: 7px;
+    top: 9px;}
+#Linkout{width:100%; height:auto; float:left; margin:5px 0px}
+#Linkout a{font-size:12px; color:#ecf0f1; margin:5px 2px; display:inline-block}
+#Linkout h3{ margin:0px; font-weight:normal}
+    #Linkout h3 a {
+        color: #f6f6f6;
+    }
+.h1{font-size:2px; color:#fff; margin:0px; font-weight:normal}

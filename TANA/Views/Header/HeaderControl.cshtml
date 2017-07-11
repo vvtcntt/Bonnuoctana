@@ -1,0 +1,53 @@
+﻿@model TANA.Models.tblConfig
+<div id="Banner">
+    <div id="Content_Banner">
+        <div id="Left_Banner">
+            <a href="/" title="Trang chủ"><img src="@Model.Logo" alt="Logo Tân Á Đại Thành" /></a>
+        </div>
+        <div id="Center_Banner">
+            <span class="pan1">Tập đoàn tân á đại thành</span>
+            <span class="pan2">@Model.Name</span>
+        </div>
+        <div id="Right_Banner">
+            <div id="Top_Banner">
+                <div class="Box_Hotline">
+                    <a href="" title="">
+                        <i></i>
+                        Hotline mua hàng
+                        <span>@Model.HotlineIN</span>
+                    </a>
+                </div>
+                <div class="Box_Order">
+
+
+                    @if (Session["soluong"] != "" && Session["soluong"] != null)
+                    {
+                        <a href="/Order/OrderIndex" title="Giỏ hàng"><i></i>Giỏ hàng của bạn có <span> @Session["soluong"].ToString() </span> sản phẩm</a>
+                    }
+                    else
+                    {
+                        <a href="#" title="Giỏ hàng"><i></i>Giỏ hàng của bạn có <span> 0 </span> sản phẩm</a>
+                    }
+                    
+                </div>
+            </div>
+            <div id="Bottom_Banner">
+                <div class="Search">
+@using (Html.BeginForm("CommandSearch", "Header", FormMethod.Post))
+                {
+                    <select id="slSearch">
+                        <option value="1" selected="selected">Sản phẩm</option>
+                        <option value="2">Tin tức</option>
+                    </select><input type="search" name="txtSearch" id="txtSearch" placeholder="Tìm kiếm" class="txtSearch" /><button type="submit" id="btnsearch" name="btnsearch" class="btnSearch"></button>
+}
+                </div>
+            </div>
+        </div>
+        <div class="Clear"></div>
+    </div>
+</div>
+@{Html.RenderAction("MenuPartial", "Header");}
+<div class="Clear"></div>
+<nav id="MenuMobile">
+    <a href="#menu" title="">Danh mục sản phẩm</a>
+</nav>

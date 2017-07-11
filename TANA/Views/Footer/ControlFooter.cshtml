@@ -1,0 +1,108 @@
+﻿@model TANA.Models.tblConfig
+<div id="Partner">
+    <div id="Content_partner">
+        @Html.Raw(ViewBag.chuoipartner)
+        <div class="Clear"></div>
+    </div>
+</div>
+<div id="Footer">
+    <div id="Info_Footer">
+        <div id="Logo">
+            <img src="@Model.Logo" alt="Logo Tân Á" />
+        </div>
+        <div id="ListAgency">
+            <div class="Agency_Tear">
+                <span class="ts">Trụ sở miền bắc</span>
+                <span class="dc">Địa chỉ: @Model.Address</span>
+                <span class="dt">Điện thoại : @Model.MobileIN   </span>
+                <span class="dt">Hotline: <span>@Model.HotlineIN</span></span>
+            </div>
+            @Html.Raw(ViewBag.chuoihotline)
+
+        </div>
+        <div class="Clear"></div>
+    </div>
+    <div id="Register">
+        <div id="Content_Register">
+            <div id="Left_Content_Register">
+                <span>Đăng ký nhận bản tin</span>
+            </div>
+            <div id="Center_Content_Register">
+                <div id="Box_Register">
+                    @using (Html.BeginForm("Command", "Footer", FormMethod.Post))
+                    {
+                        <input type="email" name="txtRes" id="txtRes" class="txtRes" /><button type="submit" class="btnRes" name="btnRes" id="btnRes"></button>}
+            </div>
+
+        </div>
+        <div id="Right_Content_Register">
+            <a href="" title="" class="Google"></a>
+            <a href="" title="" class="Face"></a>
+            <a href="" title="" class="Maps"></a>
+        </div>
+        <div class="Clear"></div>
+    </div>
+</div>
+<div id="Intro">
+    <div id="IntroContent">
+        <div class="Tear_Intro">
+            <span>Thông tin công ty</span>
+            <a href="/Gioi-thieu" title="Giới thiệu" rel="nofollow">Giới thiệu</a>
+            <a href="/Lien-he" title="Liên hệ" rel="nofollow">Liên hệ</a>
+            <a href="/0/Tin-tuc" title="Tin tức" rel="nofollow">Tin tức</a>
+            <a href="/He-thong-phan-phoi" title="Hệ thống phân phối" rel="nofollow">Hệ thống phân phối</a>
+            <a href="/Ban-do" title="Bản đồ">Bản đồ</a>
+
+        </div>
+        <div class="Tear_Intro">
+            <span>Chinh sách dịch vụ</span>
+            @Html.Raw(ViewBag.chinhsach)
+        </div>
+        <div class="Tear_Intro">
+            <span>Sản phẩm tiêu biểu</span>
+            @Html.Raw(ViewBag.chuoi)
+        </div>
+        <div class="Tear_Intro">
+            <span>Báo giá sản phẩm</span>
+            @Html.Raw(ViewBag.chuoibaogia)
+        </div>
+        <div class="Clear"></div>
+    </div>
+</div>
+<div id="Bocongthuong">
+    <a href="#" title="Đăng ký bộ công thương"><img src="~/Content/Display/iCon/logo_cap_phep.png" alt="" /></a>
+</div>
+<div id="Linkout">
+   @Html.Raw(ViewBag.Url)
+    <h3> <a href="http://thayloilocnuoc.com" title="thay lõi lọc nước Kangaroo tại nhà">Thay lõi lọc nước tại nhà</a></h3>, <h3><a href="http://Boluudien.top" title="Bộ lưu điện">Bộ lưu điện</a></h3>
+</div>
+<div id="CoppyRight">
+    <span>Coppyright 2012 <span>Bonnuoctana.net</span>. All Rights Reserved.</span>
+</div>
+</div>
+@if (Request.Browser.IsMobileDevice)
+{
+    <nav id="menu" style="z-index:1000">
+        <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li>
+                <a href="#about">Sản phẩm</a>
+                <ul>
+                    @Html.Raw(ViewBag.menu)
+                </ul>
+            </li>
+            <li><a href="/Lien-he">Liên hệ</a></li>
+        </ul>
+    </nav>
+}
+@if(Request.Browser.IsMobileDevice==false)
+{
+    @Html.Raw(Model.CodeChat)
+    
+}
+@if(Model.Coppy==true)
+{
+    
+<link href="~/Content/Display/Style/Coppy.css" rel="stylesheet" />
+<script src="~/Scripts/disable-copyright.js"></script>
+}

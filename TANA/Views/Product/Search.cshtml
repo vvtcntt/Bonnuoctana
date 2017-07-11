@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+<div class="Root">
+    <div class="Content_Root">
+        <nav>@Html.Raw(ViewBag.nUrl)</nav>
+        <div class="Clear"></div>
+    </div>
+</div>
+<div id="Main">
+    <div id="Main_Content">
+        <div id="Headshort">
+            <h1>@Html.Raw(ViewBag.Name)</h1>
+
+
+        </div>
+        <div id="Content">
+            @Html.Raw(ViewBag.chuoi)
+
+        </div>
+        <div id="MenuContent">
+            @{Html.RenderAction("PartialMenuProductAll", "Right");}
+            @{Html.RenderAction("partialHanggia", "Right");}
+            @{Html.RenderAction("partialAdw", "Right");}
+        </div>
+
+
+    </div>
+    <div class="Clear"></div>
+</div>

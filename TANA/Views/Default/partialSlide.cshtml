@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TANA.Models.tblImage>
+<div id="Slide">
+    <section id="slideshow">
+        <div class="container">
+            <div class="c_slider" style="background:@Html.Raw(ViewBag.chuoislide)"></div>
+            <div class="slider">
+
+              @foreach (var item in Model)
+              {
+                <figure>
+                    <a href="@item.Url" title="@item.Name" rel="@item.Link"> <img src="@item.Images" alt="@item.Name"  title="@item.Name" /></a>
+                </figure>
+              }
+               
+            </div>
+        </div>
+    </section>
+</div>

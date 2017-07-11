@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@using PagedList.Mvc;
+@model PagedList.IPagedList<TANA.Models.tblAgency>
+@using TANA.Models
+<div class="Root">
+    <div class="Content_Root">
+        <nav>@Html.Raw(ViewBag.nUrl)</nav>
+        <div class="Clear"></div>
+    </div>
+</div>
+<div id="Main">
+    <div id="Main_Content">
+        <div id="Content">
+            <div class="nVar_NewsDetail">
+                <h1>@Html.Raw(ViewBag.Name)</h1>
+            </div>
+            <div id="ListNews">
+
+                @foreach (var item in Model)
+                {
+                    <div class="Tear_News">
+                        <a href="/Nha-phan-phoi/@item.Tag" title="@item.Name"><img src="@item.Images" alt="@item.Name" title="@item.Name" /></a>
+                        <a href="/Nha-phan-phoi/@item.Tag" title="@item.Name">@item.Name</a>
+                        <span class="date"><span class="iCon"></span>Thời gian gửi : @item.DateCreate</span>
+                        <span class="des">
+                            @item.Description
+                        </span>
+                    </div>
+                }
+            </div>
+            @Html.PagedListPager(Model, page => Url.Action("ListAgency", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+
+        </div>
+        <div id="MenuContent">
+            @{Html.RenderAction("partialMenunews", "Right");}
+            @{Html.RenderAction("partialHanggia", "Right");}
+            @{Html.RenderAction("partialAdw", "Right");}
+        </div>
+
+
+    </div>
+    <div class="Clear"></div>
+</div>

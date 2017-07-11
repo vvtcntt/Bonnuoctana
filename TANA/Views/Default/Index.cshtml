@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+<div id="Main">
+    @{Html.RenderAction("partialSlide", "Default");}
+    <div id="Uudiem">
+        <div class="ud tv">
+            <span class="ud1">Tư vấn 24/7</span>
+            <span class="ud2">Hỗ trợ trực tuyến mọi lúc mọi nơi</span>
+        </div>
+        <div class="ud dt">
+            <span class="ud1">Đổi trả miễn phí</span>
+            <span class="ud2">Nếu hàng không đúng yêu cầu</span>
+        </div>
+        <div class="ud ch">
+            <span class="ud1">Hàng chính hãng 100%</span>
+            <span class="ud2">Bởi bạn đang mua từ chính hãng</span>
+        </div>
+
+        <div class="ud gh">
+            <span class="ud1">Giao hàng tận nơi</span>
+            <span class="ud2">Miễn phí giao hàng tại Hà Nội,TPHCM</span>
+        </div>
+    </div>
+    @Html.Raw(ViewBag.h1)
+    <div id="Main_Content">
+        <div id="Content">
+            @{Html.RenderAction("partialProductHomes", "Product");}
+            
+        </div>
+        <div id="MenuContent">
+            @{Html.RenderAction("PartialMenuProductAll", "Right");}
+            @{Html.RenderAction("partialHanggia", "Right");}
+            @{Html.RenderAction("partialNewsHomes", "Right");}
+            @{Html.RenderAction("partialAdw", "Right");}
+        </div>
+
+
+    </div>
+    <div class="Clear"></div>
+</div>
+@Html.Raw(ViewBag.register)

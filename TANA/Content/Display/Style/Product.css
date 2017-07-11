@@ -1,0 +1,242 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.Root{width:100%; height:auto; float:left; margin:0px; background:#f6f6f6}
+.Root .Content_Root{width:1200px; height:auto;   margin:0px auto; color:#333}
+.Root .Content_Root a{display:inline-block; padding:12px 7px; color:#333; font-size:13px}
+#Product{width:100%; height:auto; float:left; margin:0px}
+#ProductTop{width:100%; height:auto; float:left; margin:0px 0px 10px 0px}
+#ProductTop #Image{width:50%; height:auto; float:left; margin:0px; padding:5px}
+#TopImage{width:100%; height:auto; float:left; margin:0px 0px 7px 0px; border:1px solid #edebeb}
+#ProductTop #Image img{ margin:5px auto; max-width:97%; height:auto; display:block}
+#ProductTop #ListImage{width:100%; height:auto; float:left; margin:0px}
+#ProductTop #ListImage .Tear_Img{width:74px; height:74px; float:left; margin:5px 10px 5px 0px; padding:5px; display:table; table-layout:fixed; border:1px solid #edebeb; ;opacity:0.7}
+#ProductTop #ListImage .Tear_Img a{ text-align:center; display:table-cell; vertical-align:middle}
+#ProductTop #ListImage .Tear_Img a img{ max-width:98%; height:78px}
+#ProductTop #ListImage .setimg{ opacity:1; border:1px solid #d60000}
+#ProductTop #Info{width:48%; height:auto; float:right; margin:0px}
+#ProductTop #Info #Top1{ width:100%; height:auto; float:left; margin:0px 0px 5px 0px; border-bottom:1px solid #f2f2f2; padding-bottom:7px}
+#ProductTop #Info #Top1 h1{ font-size:16px; text-transform:uppercase; margin:5px 5px 5px 0px; font-family:Arial, Helvetica, sans-serif}
+#ProductTop #Info #Top1 span{font-size: 12px;
+  color: #7c7c7c;
+  margin: 3px 8px 3px 0px; }
+#ProductTop #Info #Top1 span span {  color: #ff6000;}
+   #Top2 li{ width:50%; margin:0px; height:auto; float:left}
+   #Top2 li span{ margin: 5px 5px !important;
+  color: #434343;
+  line-height: 23px;
+   }
+#Top2{ width:98%; height:auto; float:left; margin:10px 0px; border-left:5px solid #23a5e4; background:#fafafa; padding:5px 0px}
+  #Top2 li{ width:50%; margin:0px; height:auto; float:left}
+   #Top2 li span{ margin: 5px 5px !important;
+  color: #434343;
+  line-height: 23px;
+   }
+   #Top2 li span span{ width:12px; height:12px; float:left; background:url(../iCon/icon_1.png) no-repeat}
+   #Top3{ width:100%; height:55px; float:left; margin:5px 0px}
+#Top3 #Left_Top3{ width:50%; height:auto; float:left}
+#Top3 #Right_Top3{ width:48%; height:100%; float:left;border-left:5px solid #23a5e4; background:url(../iCon/icon_Call.png) no-repeat left center scroll transparent; background-position:10px}
+#Top3 #Left_Top3 span{color: #3a3a3a;
+  margin: 5px }
+  #Top3 #Left_Top3 span .Price_Sale{font-size: 18px;
+  color: #ff6000;
+  font-family: CondensedBold;}
+  #Top3 #Left_Top3 span.PriceDetail{color: #3a3a3a;
+  margin: 3px 5px; display:block }
+   #Top3 #Left_Top3 span.editprice{color: #939393;
+  margin: 0px 5px; display:block; font-size:9px; font-style:italic  }
+  #Top3 #Right_Top3 .sp1{  text-transform: uppercase;
+  color: #9c9fa0;
+  margin: 5px 5px 1px 55px;
+  display: block;
+  font-weight: bold;}
+   #Top3 #Right_Top3 .sp2 {   color: #ff6600;
+  text-transform: uppercase;
+  margin: 0px 5px 5px 55px;
+  display: block;
+  font-weight:normal;
+  font-size: 17px;
+  font-family: CondensedBold;
+  display: block;}
+  #Top4{ width:99%; height:auto;   float:left; margin-top:4px; background-position:7px; padding-top:3px; padding-bottom:3px}
+  #Top4 #Left_Top4{ float:left; width:auto; height:auto; margin:3px}
+  #Top4  span{ margin:20px 5px; float:left}
+  #Top4 #Left_Top4 span.Mau{ width:50px; height:57px; float:left; margin:0px; background-size:100%}
+#Top5{ width:100%; height:auto; float:left; margin:5px 0px}
+#Top5 span{  float: left;
+  margin: 7px 10px 5px 1px;}
+#Top5 .txtOrd{width: 30px;
+  height: 18px;
+  float: left;
+  margin: 3px 5px;
+  text-align: center !important;}
+  
+  #Top5 button{width: 90px;
+  height: 25px;
+  background: #0072bc;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 3px 3px;}
+ #Top6{ width:98%; height:auto; float:left; margin:5px 0px 0px 0px; border-left:5px solid #23a5e4; background:#fafafa; padding-top:5px; padding-bottom:5px}
+   #Top6 li{ width:50%; margin:0px; height:auto; float:left}
+   #Top6 li a{ margin: 0px 5px !important;
+  color: #434343;
+  line-height: 25px; float:left
+   }
+   #Top6 li a .Muahang{ width:11px; height:11px; background:url(../iCon/icon_Online_1.png) no-repeat; float:left; margin:6px 5px}
+    #Top6 li a .Thanhtoan{ width:13px; height:14px; background:url(../iCon/icon_Price.png) no-repeat; float:left; margin:4px 5px}
+    #Top6 li a .Vanchuyen{ width:10px; height:13px; background:url(../iCon/icon_Van_chuyen.png) no-repeat; float:left; margin:5px 5px}
+	#Top6 li a .Baohanh{ width:15px; height:16px; background:url(../iCon/icon_Chinh_sach.png) no-repeat; float:left; margin:0px 5px}
+#Top7{ width:100%; height:auto; float:left; margin:7px 0px; text-align:justify; position:relative}
+#Top7 #iCon{ width:54px; height:55px; background:url(../iCon/icon_HotPrice.png) no-repeat transparent; position:absolute}
+#Top7 #Content_Top7{ width:99%; height:auto; min-height:55px; float:left; margin-top:7px; background:#fafafa; border: 1px solid #f2f2f2}
+#Top7 #Content_Top7 ul li{ float:left; margin:2px 5px; width:46%}
+#Top7 #Content_Top7 p{ margin:5px 5px 12px 65px; font-size:12px; line-height:18px }
+#Top7 #Content_Top7 p a{ color:#ff5a00; text-decoration:underline}
+#Top7 #Content_Top7 p span{ color:#ff5a00}
+#Top7 #Content_Top7 ul li a{ font-size:12px; margin:2px 5px;  color:#ff5a00;}
+#Top7 #Content_Top7 a span{ width:24px; height:15px; float:left; background:url(../iCon/red-star.gif) no-repeat; margin:3px 1px}
+#Top8{ width:100%; height:auto; float:left; margin:8px 0px; font-size:12px; text-align:justify; color:#595959; font-style:italic}
+#MangxH{width:100%; height:auto; float:left; margin:5px 0px}
+#ProductTop #Info #Note{ width:auto; height:auto; padding:5px 8px; color:#3e3e3e; background:#fffbf3; border:1px solid #edebeb; float:left; margin:10px 0px; font-size:12px; line-height:18px}
+#ContentProduct{width:100%; height:auto; padding:10px 0px; line-height:18px}
+.Parameter{ width:100%; height:auto; float:left; margin:0px}
+.Nvar1{ width:100%; height:30px; float:left; background:#2c3e50}
+.Nvar1 .Name_one{ width:auto; height:100%; float:left; background: #0077cb}
+.Nvar1 .Name_one .iCon{ width:30px; height:100%; float:left; margin:2px 6px; background:url(../iCon/icon_Map.png) no-repeat}
+.Nvar1 .Name_one .Name{font-size:14px; margin:auto 5px; line-height:30px; color:#FFF; text-transform:uppercase; padding-right:25px}
+.Content_Parameter{ width:100%; height:auto; float:left; margin:10px 0px}
+.Parameter table{ width:100%; height:auto; float:left; margin:0px}
+.Parameter table tr:nth-child(2n){ background-color:#f5f5f5}
+ 
+.Parameter table tr td{ border-right:1px solid #f1efef;  font-size:13px ;
+}
+.xemthemchitiet{width:100%; height:auto; float:left; margin:5px 0px; text-align:center; font-size:15px; color:#00910a}
+.xemthemchitiet a{display:inline-block; padding:5px 7px; color:#F00 }
+.Parameter table tr td:first-child{text-align:center;line-height:26px;text-indent:15px; }
+.Parameter table tr td:last-child{padding:0px 10px; line-height:18px;width:58%}
+.Parameter table tr:last-child{ border-bottom:1px solid #f1efef;width:38%}
+.Parameter table tr td h3{font-size:13px; margin:0px; float:left; font-weight:normal; border:none}
+.Parameter table tr td h3 a{margin:5px; display:block}
+ 
+.Advantage{ width:100%; height:auto; float:left; margin:10px 0px}
+.Content_Advan{ width:100%; height:auto; float:left; margin:10px 0px; font-size:13px; line-height:18px; text-align:justify}
+.Content_Advan img{max-width:97%; height:auto; float:left; margin:5px}
+
+.ContentProduct{ width:100%; height:auto; float:left; margin:10px 0px}
+.ContentProduct h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a4851;
+    padding-bottom: 5px;
+    border-bottom: 1px #e5e5e5 solid;
+    margin-bottom: 12px; text-transform:uppercase
+}
+.ContentProduct h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a4851;
+    padding-bottom: 5px;
+    border-bottom: 1px #e5e5e5 solid;
+    margin-bottom: 12px; text-transform:uppercase
+}
+.ContentProduct h2.Name,h3.Name{font-weight:normal; float:left; margin:0px; border:none}
+.Content_ContentProduct{ width:100%; height:auto; float:left; margin:10px 0px; font-size:13px; line-height:20px; text-align:justify}
+.Content_ContentProduct img{max-width:97%; height:auto !important;   margin:5px}
+.Content_Image img{max-width:100%; height:auto !important;   margin:0px}
+#Comment{ width:100%; height:auto;
+ float:left;
+ margin:5px 0px}
+  #Comment .nVar_2{ width:95%; height:25px; float:left; margin:0px; background:url(../iCon/comments-icon.png) no-repeat left center scroll transparent; line-height:25px; text-indent:35px;color:#4b4b4b; text-transform:uppercase; font-family:CondensedBold; font-size:16px}
+  #Sluion{ width:100%; height:auto; float:left; margin:0px}
+  #review{ width:100%; height:auto; float:left; margin:0px}
+  #review .rv1{ color:#ff5b02; font-size:13px; margin:5px; display:block}
+#review .rv2{ color:#0a9aff; font-size:12px; margin:2px 5px; display:block; font-style:italic}
+#ConmentFacebook{ width:100%; height:auto; float:left; margin:5px 0px}
+#tb{ width:100%; height:auto; float:left; margin:5px 0px; border:0px; position:relative}
+#tb tr{  position:relative; width:100%; float:left; display:table; table-layout:fixed; margin-bottom:6px}
+#tb tr td{width:48%; float:left}
+#tb tr td:first-child{ margin-right:7px}
+#tb tr td:last-child{ margin-left:7px; float:right}
+#tb tr td img{ float:left; margin:3px; max-width:80px; margin-right:20px; height:auto !important}
+#tb tr h4{ color:#d81e13; margin:3px 0px}
+#tb1{ width:100%; height:auto; float:left; margin:5px 0px; border:0px; position:relative}
+#tb1 tr{  position:relative; width:100%; float:left; height:100%;margin-bottom:0px}
+#tb1 tr td{ float:left; margin:0px}
+#tb1 tr td img{ float:left; margin:3px; max-width:100px; margin-right:20px; height:auto !important}
+#tb1 tr td h4{ color:#d81e13; margin:3px 0px; font-size:22px; font-family:Condensed; text-transform:uppercase}
+#tb1 tr td:first-child{ width:14%; margin-right:15px}
+ #tb1 tr td:last-child{ width:80%; float:left}
+ #Note{ width:85%; height:auto; margin:8px auto; display:block; background:url(../iCon/iconChuY.png) no-repeat left center scroll #fefde8; background-position:5px; min-height:40px; padding:5px}
+  #Note span{ font-size:12px; margin:5px 5px 5px 25px; text-align:center; display:block; color:#5c5c5c}
+#tb2{ border:none;border-right:none; border-bottom:none; width:100% !important }
+#tb2 tr{ min-height:25px; line-height:26px}
+#tb2 td{text-indent:10px}
+#tb2 td:first-child{ font-weight:bold}
+#tb2 tr:nth-child(2n){ background-color:#f5f5f5}
+#tb2 tr:first-child{ text-align:center; text-transform:uppercase; line-height:25px; background:#5f5f5f; font-weight:normal !important; font-weight:bold !important; color:#FFF}
+#Headshort{width:100%; height:auto; float:left; margin:0px; padding:10px 0px}
+#Headshort h1{font-size:30px; color:#00b3e7; font-weight:normal; margin:5px 5px}
+#Headshort span{line-height:18px; color:#3e3e3e; margin:5px; display:block; font-size:12px}
+#NoteContent{ width:auto; padding:5px; height:auto; float:left; margin:10px 0px; font-size:12px; line-height:18px; color:#6e6e6e}
+#spcungia{width:100%; height:auto; float:left; margin:10px 0px; background:#fafafa; padding-bottom:10px}
+#spcungia .Namecungia{color:#F00; font-weight:bold; font-size:14px; margin:5px 5px; display:block}
+.Content_spcunggia{width:100%; height:auto; float:left; margin:0px;   border-top:1px #e5e5e5 solid; border-radius:5px }
+.Tear_cg{width:32%; height:auto; margin:5px; border-right:1px #e5e5e5 solid; float:left}
+.Tear_cg:last-child{border:none}
+.Tear_cg .name_cg{ color:#3e3e3e; font-size:12px; margin:0px 2px 7px 5px; display:block; font-weight:bold}
+.Tear_cg img{ height:70px; width:auto; float:left; margin:0px 15px 0px 5px; float:left}
+.Tear_cg .Price{color:#3e3e3e;   display:block; margin:10px 5px 3px 10px}
+.Tear_cg .Price span{color:#F00;   font-size:16px}
+.Tear_cg .PriceSale{margin:2px 5px 2px 10px; display:block; font-size:12px; color:#3e3e3e}
+ .buynow-button {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    background-color: #fafafa;
+    border-left: 7px #0063a4  solid;
+}
+.buynow-button-inner {
+    margin: 20px;
+}
+.buynow-button-inner h3 .name-product{    font-size: 14px;
+    font-weight: bold;
+    color: #3a4851;
+    margin-bottom: 10px;}
+	.buynow-button-inner .thumb {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 20px;
+    border: 1px #e4e4e4 solid; overflow:hidden}
+	.buynow-button-inner .thumb img{max-width:100%; max-height:80px; margin:0px auto; display:block}
+	.buynow-button-inner .price {
+    float: left;
+    border-right: 1px #ededed solid;
+    padding-right: 20px;
+    font-family: arial;
+    font-size: 14px;
+    color: #3a4851;
+    line-height: 38px;}
+	.buynow-button-inner  .new-price{    font-size: 16px;
+    color: #ff0000;
+    font-weight: bold;}
+	.buynow-button-inner .button {
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.buynow-button-inner .button .buy-now {
+    background: #0063a4 url(../iCon/cart-new.png) no-repeat scroll 10px 12px;
+    padding: 13px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+	border:none
+}
+.VideoContent{width:100%; height:auto; float:left; margin:5px 0px}
+#Content_MenuProduct .Tear_1{width:98%; float:none; margin:7px auto}

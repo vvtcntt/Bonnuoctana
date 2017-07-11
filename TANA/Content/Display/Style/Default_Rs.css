@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) {
+	#Content_Banner{width:100%}
+	#Center_Banner{display:none}
+	#Left_Banner{width:35%}
+	#Right_Banner{width:65%}
+	#Right_Menu ul li a{ text-transform:none; font-size:13px;}
+	#Right_Menu ul .no{display:none}
+	#Main_Menu{width:100%;  z-index:10000}
+	#Right_Menu{width:auto; float:left}
+	#Main{width:100%; overflow:hidden}
+#Slide{display:none}
+#Uudiem .ud{width:49%; float:left; margin:5px 5px 5px 0px}
+	#Uudiem .ud:last-child{float:left}
+	#Content{width:100%}
+	#Main_Content #MenuContent{display:none}
+	.Tear_1{width:31%}
+	#Partner{display:none}
+	#Info_Footer{width:100%}
+	#Info_Footer #Logo{width:100%; padding-bottom:15px}
+	#Info_Footer #Logo img{margin:7px auto; display:block; float:none}
+	#Info_Footer #ListAgency{width:100%; padding:10px 0px}
+	#Info_Footer #ListAgency .Agency_Tear{width:30%}
+	#Content_Register{width:100%}
+	#Right_Content_Register{display:none}
+	#Intro #IntroContent{ width:100%}
+	#Bocongthuong{padding:0px}
+    #Linkout{width:100%}
+	}
+@media screen and (max-width: 480px) {
+	#Left_Banner{width:100%}
+	#Left_Banner img{float:none; margin:5px auto; display:block; width:90%}
+	#Right_Banner{width:100%}
+	#Uudiem .ud{width:97%; margin:1%}
+	.Tear_1{width:46%}
+	.Tear_1 .Price{ text-align:center; float:none}
+	.Tear_1 .PriceSale{ text-align:center; float:none; margin-top:2px}
+	#Info_Footer #ListAgency .Agency_Tear{width:98%}
+	#Content_Register #Left_Content_Register{width:100%}
+	#Content_Register #Left_Content_Register span{text-align:center}
+	#Center_Content_Register{width:100%}
+	#Center_Content_Register #Box_Register{width:100%; padding:0px 0px; margin:0px}
+	#Center_Content_Register #Box_Register .txtRes{width:88%}
+	#Center_Content_Register #Box_Register .btnRes{width:12%}
+	footer{width:100%; overflow:hidden}
+	#Intro{display:none}
+	#Menu{display:none}
+	#MenuMobile{display:block}
+	}
